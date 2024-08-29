@@ -1,0 +1,128 @@
+<table>
+    <tr>
+      <td rowspan="2">Toppings </td>
+      <td colspan="4">Pizza Size</td>
+    </tr>
+    <tr>
+      <td>Small ($5) <br/>
+        <div style="min-width:120px;">
+        <button id="btnSmallMinus" (click)="SmallMinus(lblSmallSize)">-</button>
+        <label #lblSmallSize id="lblidSmallSize"> {{smallSize}} </label>
+        <button id="btnSmallPlus" (click)="SmallPlus(lblSmallSize)">+</button>
+      
+    </div></td>
+      <td>Medium ($7) <br/>
+        <div style="min-width:120px;">
+        <button id="btnMediumMinus" (click)="MediumMinus(lblMediumSize)">-</button>
+        <label #lblMediumSize id="lblMediumSize"> {{mediumSize}} </label>
+        <button id="btnMediumPlus" (click)="MediumPlus(lblMediumSize)">+</button>
+      </div>
+    </td>
+      <td>Large ($8)  <br/>
+        <div style="min-width:120px;">
+            <button id="btnLargeMinus" (click)="LargeMinus(lblLargeSize)">-</button>
+            <label #lblLargeSize id="lblMediumSize"> {{largeSize}} </label>
+            <button id="btnLargePlus" (click)="LargePlus(lblLargeSize)">+</button>
+          </div>
+    </td>
+      <td>Extra Large ($9) <br/>
+        <div style="min-width:120px;">
+            <button id="btneLargeMinus" (click)="eLargeMinus(lbleLargeSize)">-</button>
+            <label #lbleLargeSize id="lbleLargeSize"> {{elargeSize}} </label>
+            <button id="btneLargePlus" (click)="eLargePlus(lbleLargeSize)">+</button>
+          </div>
+
+      </td>
+    </tr>
+    <tr>
+        <td colspan="5">Veg Toppings</td>
+      </tr>
+      <tr>
+        <td>Tomatoes ($1.00)</td>
+        <td><input type="checkbox"#ctemptomatoessmall name="chktomatoessmall" [(ngModel)]="isChktomatoessmall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chktomatoesmedium" [(ngModel)]="isChktomatoesmedium"  (change)="onChktomatoesmedium()"/></td>
+        <td><input type="checkbox" name="chktomatoeslarge" [(ngModel)]="isChktomatoeslarge"  (change)="onChktomatoeslarge()"/></td>
+        <td><input type="checkbox" name="chktomatoeselarge" [(ngModel)]="isChktomatoeselarge" (change)="onChktomatoeselarge()"/></td>
+      </tr>
+      
+      <tr>
+        <td>Onions ($0.50)</td>
+        <td><input type="checkbox" name="chkonionssmall" [(ngModel)]="isChkonionssmall" (change)="onChkonionssmall()"/></td>
+        <td><input type="checkbox" name="chkonionsmedium" [(ngModel)]="isChkonionsmedium" (change)="onChkonionsmedium()"/></td>
+        <td><input type="checkbox" name="chkonionslarge" [(ngModel)]="isChkonionslarge"  (change)="onChkonionslarge()"/></td>
+        <td><input type="checkbox" name="chkonionselarge" [(ngModel)]="isChkonionselarge"  (change)="onChkonionselarge()"/></td>
+      </tr>
+      <tr>
+        <td>Bell Pepper ($1.00)</td>
+        <td><input type="checkbox" name="chkbellpeppersmall" [(ngModel)]="isChkbellpeppersmall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chkbellpeppermedium" [(ngModel)]="isChkbellpeppermedium"  (change)="onChkbellpeppermedium()"/></td>
+        <td><input type="checkbox" name="chkbellpepperlarge" [(ngModel)]="isChkbellpepperlarge"  (change)="onChkbellpepperlarge()"/></td>
+        <td><input type="checkbox" name="chkbellpepperelarge" [(ngModel)]="isChkbellpepperelarge"  (change)="onChkbellpepperelarge()"/></td>
+      </tr>
+      <tr>
+        <td>Mushroom ($1.20)</td>
+        <td><input type="checkbox" name="chkmushroomsmall" [(ngModel)]="isChkmushroomsmall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chkmushroommedium" [(ngModel)]="isChkmushroommedium"  (change)="onChkmushroommedium()"/></td>
+        <td><input type="checkbox" name="chkmushroomlarge" [(ngModel)]="isChkmushroomlarge"  (change)="onChkmushroomlarge()"/></td>
+        <td><input type="checkbox" name="chkmushroomelarge" [(ngModel)]="isChkmushroomelarge"  (change)="onChkmushroomelarge()"/></td>
+      </tr>
+      <tr>
+        <td>Pineapple ($0.75)</td>
+        <td><input type="checkbox" name="chkpineapplesmall" [(ngModel)]="isChkpineapplesmall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chkpineapplemedium" [(ngModel)]="isChkpineapplemedium"  (change)="onChkpineapplemedium()"/></td>
+        <td><input type="checkbox" name="chkpineapplelarge" [(ngModel)]="isChkpineapplelarge"  (change)="onChkpineapplelarge()"/></td>
+        <td><input type="checkbox" name="chkpineappleelarge" [(ngModel)]="isChkpineappleelarge"  (change)="onChkpineappleelarge()"/></td>
+      </tr>
+      <tr>
+        <td colspan="5">Non Veg Toppings</td>
+      </tr>
+      <tr>
+        <td>Sausage ($1.00)</td>
+        <td><input type="checkbox" name="chksausagesmall" [(ngModel)]="isChksausagesmall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chksausagemedium" [(ngModel)]="isChksausagemedium"   (change)="onChksausagemedium()"/></td>
+        <td><input type="checkbox" name="chksausagelarge" [(ngModel)]="isChksausagelarge"  (change)="onChksausagelarge()"/></td>
+        <td><input type="checkbox" name="chksausageelarge" [(ngModel)]="isChksausageelarge"  (change)="onChksausageelarge()"/></td>
+    </tr>
+      <tr>
+        <td>Peperoni ($2.00)</td>
+        <td><input type="checkbox" name="chkpeperonismall" [(ngModel)]="isChkpeperonismall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chkpeperonimedium" [(ngModel)]="isChkpeperonimedium"  (change)="onChkpeperonimedium()"/></td>
+        <td><input type="checkbox" name="chkpeperonilarge" [(ngModel)]="isChkpeperonilarge"  (change)="onChkpeperonilarge()"/></td>
+        <td><input type="checkbox" name="chkpeperonielarge" [(ngModel)]="isChkpeperonielarge"  (change)="onChkpeperonielarge()"/></td>
+      </tr>
+      <tr>
+        <td>Barbeque Chicken ($3.00)</td>
+        <td><input type="checkbox" name="chkbarbequechickensmall" [(ngModel)]="isChkbarbequechickensmall" (change)="onChktomatoessmall()"/></td>
+        <td><input type="checkbox" name="chkbarbequechickenmedium" [(ngModel)]="isChkbarbequechickenmedium"  (change)="onChkbarbequechickenmedium()"/></td>
+        <td><input type="checkbox" name="chkbarbequechickenlarge" [(ngModel)]="isChkbarbequechickenlarge"  (change)="onChkbarbequechickenlarge()"/></td>
+        <td><input type="checkbox" name="chkbarbequechickenelarge" [(ngModel)]="isChkbarbequechickenelarge"  (change)="onChkbarbequechickenelarge()"/></td>
+      </tr>
+      <tr style="background-color: cadetblue;">
+        <td colspan="5">Total</td>
+      </tr>
+      <tr>
+        <td>Offer</td>
+        <td></td>
+        <td><label>Offer 1</label><input type="checkbox" name="chkoffer1"  [(ngModel)]="isChkOffer1" disabled /> 
+        <br/>
+        <label>Offer 2</label><input type="checkbox" name="offer2" [(ngModel)]="isChkOffer2" disabled/>
+        </td>
+        <td>Offer 3<input type="checkbox" name="chkoffer3" [(ngModel)]="ischkOffer3" disabled/></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><del  ></del><label></label></td>
+        <td><label #totalSmall>{{totalSmallValue}}</label></td>
+        <td><span    ><del #totalMedium>{{totalMediumValue}}</del><label>{{totalMediumOffer}}</label></span>
+         
+         
+         <!---- <span  *ngIf="isChkOffer2==true"><del #totalMedium>{{totalMediumValue}}</del><label>{{totalMediumOffer}}</label>
+          </span> -->
+        </td>
+        <td>
+          <span ><del #totalLarge>{{totalLargeValue}}</del><label>{{totalLargeOffer}}</label></span>
+        <!-- <span ><label>{{totalLargeValue}}</label></span> -->
+        </td>
+        <td><label #totaleLarge>{{totaleLargeValue}}</label></td>
+      </tr>
+    </table>

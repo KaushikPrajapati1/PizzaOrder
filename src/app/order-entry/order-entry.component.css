@@ -1,0 +1,9 @@
+table tr td
+{
+     border:2px solid gray;
+     text-align:center;
+     font-size: small;
+}
+table{
+    width:50%;
+}
