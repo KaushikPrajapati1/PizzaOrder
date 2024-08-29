@@ -158,10 +158,10 @@ private offer2(cnt:number){
           }
         }
 MediumMinus(_t17: HTMLLabelElement) {
+  this.isChkOffer1=false;
+  this.isChkOffer2=false;
   if (parseFloat(_t17.innerText)< 2 || _t17.innerText=="")
    {
-    this.isChkOffer1=false;
-    this.isChkOffer2=false;
     this.mediumSize = (0).toString();
     this.isChkonionsmedium = false;
     this.isChktomatoesmedium = false;
@@ -177,6 +177,8 @@ MediumMinus(_t17: HTMLLabelElement) {
   this.CalculateMediumSizeAmount();
 }
 MediumPlus(_t17: HTMLLabelElement) {
+  this.isChkOffer1=false;
+  this.isChkOffer2=false;
   if (parseFloat(_t17.innerText)== 0 || _t17.innerText=="")
     this.mediumSize = (0+1).toString();
   else
@@ -244,10 +246,10 @@ private CalculateSmallSizeAmount(){
   this.offer1(cnt);
   this.offer2(cnt);
     if (this.isChkOffer1==true ){
-    this.totalMediumOffer = "$5";
+    this.totalMediumOffer = "5.00";
    }
    else if (this.isChkOffer2==true ){
-    this.totalMediumOffer = "$9";
+    this.totalMediumOffer = "9.00";
    }
    else
    {

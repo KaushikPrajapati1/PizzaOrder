@@ -112,17 +112,17 @@
       </tr>
       <tr>
         <td><del  ></del><label></label></td>
-        <td><label #totalSmall>{{totalSmallValue}}</label></td>
-        <td><span    ><del #totalMedium>{{totalMediumValue}}</del><label>{{totalMediumOffer}}</label></span>
+        <td><label #totalSmall>{{totalSmallValue| currency}}</label></td>
+        <td><span    ><del #totalMedium>{{totalMediumValue|currency}}</del><label>{{totalMediumOffer|currency }}</label></span>
          
          
          <!---- <span  *ngIf="isChkOffer2==true"><del #totalMedium>{{totalMediumValue}}</del><label>{{totalMediumOffer}}</label>
           </span> -->
         </td>
         <td>
-          <span ><del #totalLarge>{{totalLargeValue}}</del><label>{{totalLargeOffer}}</label></span>
+          <span ><del #totalLarge>{{totalLargeValue| currency}}</del><label>{{totalLargeOffer| currency}}</label></span>
         <!-- <span ><label>{{totalLargeValue}}</label></span> -->
         </td>
-        <td><label #totaleLarge>{{totaleLargeValue}}</label></td>
+        <td><label #totaleLarge>{{totaleLargeValue| currency}}</label></td>
       </tr>
     </table>
